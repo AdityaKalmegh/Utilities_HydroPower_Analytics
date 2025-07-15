@@ -1,0 +1,17 @@
+Questions to be Addressed in the Presentation:
+
+1 - How many NA errors are there in the dataset?
+    Special notes:
+        - For simplicity, and to answer the rest of the questions, fill all NA values with 0.
+        - Amperes/amps, are a measure of electrical current. For consistency, and due the nature of sensor data, call a unit ‘offline’ if it has an hourly average total current less than 10A
+2 - How many total hours was Unit C6 offline in 2018?
+3 - How many hours was C6 offline in each month?
+4 - What percentage of the time was C6 offline in each month?
+5 - Which unit ran for the most amount of time in 2018?
+6 - Which hour of the day has the most offline time?
+7 - Create a graph showing the average cooling water temperature by month. Are there any other data points that have seasonality fluctuations?
+8 - Are there any apparent differences between the cooling systems of the 5 units? Show the difference graphically. (I.e. Do any of the units run hotter?)
+9 - For the month of May, design a dashboard for the cooling system that shows some graphs and relevant statistics (max, min, average, etc.) to display how the cooling system performed during the month.
+10- What other type(s) of analysis or business intelligence reporting could be done to help
+understand the cooling systems and provide insights into their operational
+performance. What software tools and methods would you use?
