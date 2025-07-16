@@ -1,0 +1,22 @@
+import pandas as pd
+
+# Load your data
+df = pd.read_csv("your_file.csv")
+
+# Melt the dataframe to long format
+compressor_units = ['C-02', 'C-04', 'C-05', 'C-06', 'C-07']
+long_df = pd.DataFrame()
+
+for unit in compressor_units:
+    unit_df = df[['timestamp_utc', 'datetime_stamp_pacific']].copy()
+    unit_df['CompressorUnit_Details'] = unit
+    unit_df['Average winding temperatures (_avg_winding_temp(C))'] = df[f'{unit}_avg_winding_temp(C)']
+    unit_df['Total current (_total_current(A))'] = df[f'{unit}_total_current(A)']
+    unit_df['Average cooling water flow (_avg_cooling_water_flow(gal/min))'] = df[f'{unit}_avg_cooling_water_flow(gal/min)']
+    unit_df['Average cooling water temperature (_avg_cooling_water_temp(C))'] = df[f'{unit}_avg_cooling_water_temp(C)']
+    unit_df['Average cooling air outlet temperature (_avg_cooling_air_out_temp(C))'] = df[f'{unit}_avg_cooling_air_out_temp(C)']
+    
+    long_df = pd.concat([long_df, unit_df], ignore_index=True)
+
+# Save to CSV
+long_df.to_csv("reshaped_compressor_data.csv", index=False)

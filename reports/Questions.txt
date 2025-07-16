@@ -3,7 +3,8 @@ Questions to be Addressed in the Presentation:
 1 - How many NA errors are there in the dataset?
     Special notes:
         - For simplicity, and to answer the rest of the questions, fill all NA values with 0.
-        - Amperes/amps, are a measure of electrical current. For consistency, and due the nature of sensor data, call a unit ‘offline’ if it has an hourly average total current less than 10A
+        - Amperes/amps, are a measure of electrical current. 
+        - For consistency, and due the nature of sensor data, call a unit ‘offline’ if it has an hourly average total current less than 10A
 
 2 - How many total hours was Unit C6 offline in 2018?
 
