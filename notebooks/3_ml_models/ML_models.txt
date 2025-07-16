@@ -1,0 +1,59 @@
+1. Operational Health Monitoring
+    Anomaly Detection Reports:
+        * Identify unusual spikes/drops in temperature, flow, or current (e.g., Z-score or ML-based outlier detection).
+        * Flag recurring or long-duration offline periods.
+
+    Compressor Efficiency Index**:
+        * Calculate metrics like *energy per unit cooling delivered*.
+        * Compare performance across units normalized by load.
+
+2. Trend and Usage Analysis
+    Time-Series Dashboards:
+
+        * Hourly/daily/weekly trends of key metrics (temp, flow, current).
+        * Seasonal performance shifts — is summer stress observable?
+
+    Unit Utilization Report:
+
+        * % uptime vs downtime per unit per week/month.
+        * Heatmaps for visualizing runtime and idle time.
+
+3. Predictive Maintenance & Reliability**
+
+    Maintenance Alert System**:
+        * Predictive modeling using degradation patterns (e.g., rising temperature + declining flow = clogged heat exchanger).
+    Mean Time Between Failures (MTBF)**:
+        * Track failure frequency per unit and calculate MTBF to prioritize inspections.
+
+
+4. Performance Benchmarking**
+
+    Cross-Unit Comparison**:
+
+        * Rank compressors by energy efficiency, runtime, and stability.
+        * Identify underperforming units and drill into reasons (e.g., older equipment, sensor drift).
+
+    Cooling Load vs Ambient Conditions**:
+
+        * Correlate external air temp (if available) with system performance.
+        * Are cooling systems operating harder during hotter hours?
+
+5. Cost & Energy Optimization**
+
+    Energy Consumption Modeling**:
+
+        * Estimate power usage based on total current (A) per unit × runtime.
+        * Use this to calculate \$ cost of cooling per unit.
+
+    Optimization Scenarios**:
+
+        * Simulate cost savings from scheduling unit rotations or maintenance shutdowns.
+        * Load balancing across units to reduce wear-and-tear on any single compressor.
+
+6. Failure Investigation Reports**
+
+    Post-Event Root Cause Analysis**:
+
+        * Automatically generate a report when a unit goes offline.
+        * Show metrics before, during, and after the event.
+
